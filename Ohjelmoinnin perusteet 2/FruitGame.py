@@ -104,7 +104,7 @@ if __name__=="__main__":
         elif roll == "2":
             while True:
                 multiplier = int(input("Anna kerroin väliltä 1-10, vain kokonaisluvut sallittu: "))
-                if multiplier >= 1 and multiplier <= 10:
+                if multiplier >= 1 and multiplier <= 10 and multiplier % 1 == 0:
                     break #Tarkistetaan onko kerroin oikeanlainen
                 else:
                     print("Anna sopiva kerroin!")
